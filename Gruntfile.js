@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     browserify: {
       development: {
         src: ["./js/*.js"],
-          dest: './dist/js/common.js',
+          dest: './dist/js/bundle.js',
           options: {
             browserifyOptions: { debug: true },
             transform: [["babelify", { "presets": ["es2015"] }]]
